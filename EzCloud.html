@@ -436,3 +436,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
+
+.spinner {width:4em;height:4em}
+.spinner img {
+  width:100%;
+  height:100%;
+  animation:movee 2s infinite ease-in-out
+}
+@keyframes movee {
+  0% {
+    transform:scale(0);
+    -webkit-transform:scale(0)
+  }
+  100% {
+    transform:scale(1);
+    -webkit-transform:scale(1);
+    opacity:.5
+  }
+}
